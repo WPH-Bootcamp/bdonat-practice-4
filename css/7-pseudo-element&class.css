@@ -1,0 +1,64 @@
+/* DICKY'S CSS REST */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PSEUDO-ELEMENT */
+
+ul.element li {
+  list-style: none;
+}
+
+ul.element li::before {
+  content: ">. ";
+}
+
+ul.element li::after {
+  content: " ✅";
+}
+
+/* PSEUDO-CLASS */
+/* 1. HOVER */
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+}
+
+.kotak:hover {
+  background-color: cyan;
+}
+
+/* 2. FOCUS */
+input.focus:focus {
+  border-color: red;
+  outline: none;
+  box-shadow: 0 0 5px red;
+}
+
+/* 3. NTH-CHILD(N) */
+ul.classes li:nth-child(even) {
+  background-color: purple;
+}
+ul.classes li:nth-child(odd) {
+  background-color: salmon;
+}
+
+.kotakin {
+  width: 100px;
+  height: 100px;
+}
+
+div.test div.kotakin:nth-child(even) {
+  background-color: purple;
+}
+div.test div.kotakin:nth-child(odd) {
+  background-color: salmon;
+}
+
+/* 4. NOT */
+input:not([type="email"]) {
+  border-color: brown;
+}

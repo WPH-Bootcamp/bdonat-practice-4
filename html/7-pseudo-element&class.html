@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 7 - Pseudo-elements dan Pseudo-class</title>
+    <link rel="stylesheet" href="../css/7-pseudo-element&class.css" />
+  </head>
+  <body>
+    <h1>PSEUDO-ELEMENT DAN PSEUDO-CLASS</h1>
+
+    <!-- 1. PSEUDO-ELEMENT -->
+    <h2>1. PSEUDO-ELEMENT</h2>
+    <ul class="element">
+      <li>Bawang putih</li>
+      <li>Bawang merah</li>
+      <li>Merica</li>
+    </ul>
+
+    <!-- 2. PSEUDO-CLASS -->
+    <h2>2. PSEUDO-CLASS</h2>
+    <!-- 
+        -. hover : ketika kursor ada diatas sebuah elemen
+        -. focus : menunjukkan elemen yang sedang aktif atau siap diisi
+        -. nth-child(n) : menargetkan elemen berdasarkan posisinya di dalam parent
+        -. not : untuk mengecualikan elemen yang kita panggil
+    -->
+    <!-- 1. HOVER -->
+    <h3>1. HOVER</h3>
+    <div class="kotak"></div>
+
+    <h3>2. FOCUS</h3>
+    <input class="focus" type="password" />
+
+    <h3>3. NTH-CHILD(N)</h3>
+    <ul class="classes">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <div class="test">
+      <div class="kotakin"></div>
+      <div class="kotakin"></div>
+      <div class="kotakin"></div>
+      <div class="kotakin"></div>
+    </div>
+
+    <h3>4. NOT</h3>
+    <input type="email" />
+    <input type="text" />
+    <input type="password" />
+  </body>
+</html>

@@ -1,0 +1,48 @@
+/* VARIABEL */
+
+/* 1. DEFINING VARIABEL -> MENDEFINISIKAN VARIABEL */
+:root {
+  --lebar-kotak: 100px;
+  --tinggi-kotak: 100px;
+  --bg-color-primary: salmon;
+  --bg-color-secondary: cyan;
+  --fz-main: 50px;
+  --tinggi-teks: var(--tinggi-kotak);
+  --perataan: center;
+}
+
+/* 2. USING VARIABEL -> MENGGUNAKAN VARIABEL */
+
+.kotak {
+  color: var(--kotak-color);
+  width: var(--lebar-kotak);
+  height: var(--tinggi-kotak);
+  background-color: var(--bg-color-container);
+  font-size: var(--fz-main);
+  text-align: var(--perataan);
+  line-height: var(--tinggi-teks);
+}
+
+/* SCOPE */
+.kotak {
+  --kotak-color: white;
+}
+
+.bulet {
+  --bulet-color: red;
+}
+
+/* CONTAINER */
+.container {
+  --bg-color-container: green;
+}
+
+.bulet {
+  color: var(--bulet-color);
+  width: var(--lebar-kotak);
+  height: var(--tinggi-kotak);
+  background-color: var(--bg-color-container);
+  font-size: var(--fz-main);
+  text-align: var(--perataan);
+  line-height: var(--tinggi-teks);
+}
