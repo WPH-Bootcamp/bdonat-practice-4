@@ -1,0 +1,31 @@
+/* 
+    ANIMATION
+
+    pattern:
+    animation: name duration timing-function delay iteration-count direction fill-mode; 
+
+    -. name : Nama animasi yang kita definisikan dengan @keyframes
+    -. duration : lama animasi berlangsung (s) : 2s, 0.3s, ...
+    -. timing-function : linear, ease, ease-in, ease-out, ease-in-out, dll..
+    -. delay : Menentukan waktu tunggu sebelum animasi dijalankan
+    -. iteration-count : Menentukan berapa kali animasi diulang -> 3, 5, 10, infinite
+    -. direction : Menentukan arah pergerakan animasi setiap siklusnya, apakah maju atau bolak balik. -> normal (maju terus), reverse (kebalikan normal), alternate (bolak-balik), alternate-reverse (bolak-balik tapi dari to -> from)
+    -. fill-mode : Menentukan bagaimana gaya akhir animasi diterapkan, Apakah elemen tetap di akhir, di awal, atau kembali. -> none, forwards, backwards, both
+*/
+
+@keyframes kotakBergerak {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(200px);
+  }
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: kotakBergerak 2s 2 normal forwards;
+}
