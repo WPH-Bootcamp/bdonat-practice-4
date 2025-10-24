@@ -1,0 +1,88 @@
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+}
+
+/* TRANSFORM :
+    -. translate()
+    -. scale()
+    -. rotate()
+    -. skew()
+    -. matrix()
+*/
+
+/* 
+    1. TRANSLATE -> Menggeser elemen dari posisi asalnya.
+
+    pattern:
+    -. Double Length Percentage
+    transform: translate(horizontalPos, verticalPos)
+    -. Single Length Percentage -> hanya akan membaca yang horizontal
+    transform: translate(horizontalPos, verticalPos)
+*/
+.translate {
+  transform: translate(100px);
+}
+
+/* 
+    2. SCALE -> Mengubah ukuran elemen.
+    pattern:
+
+    -. Single Length Percentage
+    transform: scale(sx)
+    -. Double Length Percentage
+    transform: scale(sx, sy)
+
+    Note:
+    sy -> Optional
+*/
+.scale {
+  transform: scale(0.7);
+}
+
+/* 
+    3. ROTATE -> Memutar elemen di sekitar titik asal.
+    pattern:
+
+    transform: rotate(derajat)
+
+    Note: satuannya adalah "deg"
+
+*/
+.rotate {
+  transform: rotate(45deg);
+}
+
+/* 
+    4. SKEW -> Memiringkan elemen di sepanjang sumbu X atau Y.
+    pattern: 
+
+    -. Single Angle : Horizontal
+    transform: skew(ax)
+
+    -. Double Angle : Horizontal & Vertical 
+    transform: skew(ax, ay)
+
+    Note: satuannya adalah "deg"
+*/
+.skew {
+  transform: skew(180deg, 30deg);
+}
+
+/* 
+    5. MATRIX
+    pattern: 
+
+    transform: matrix(scaleX, scaleY, skewX, skewY, translateX, translateY)
+*/
+
+.matrix {
+  transform: matrix(1.2, 0.3, 0, 1, 50, 100);
+}
+
+/* TAMBAHAN -> Menggabungkan beberapa transform ke dalam 1 property */
+
+.combined {
+  transform: translate(100px) rotate(45deg) scale(1.7);
+}

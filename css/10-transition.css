@@ -1,0 +1,43 @@
+/* 
+    TRANSITION 
+
+    pattern :
+    transition: property duration timing-function delay;
+
+    -. property -> Property CSS apa yg akan diubah secara bertahap : background-color, font-size, dll....
+    -. duration -> Menentukan berapa lama waktu transisi berlangsung (s) : 10s, 20s, 0.3s, dll...
+    -. timing-function -> linear, ease, ease-in, ease-out, ease-in-out, dll....
+    -. delay -> Menentukan berapa lama waktu tunda sebelum transisi dimulai
+*/
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  margin: 10px;
+  transition: transform 2s;
+}
+
+.kotak:hover {
+  transform: translate(200px);
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.ease {
+  transition-timing-function: ease;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+  animation-timing-function: ease-in-out;
+}
